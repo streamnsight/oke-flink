@@ -288,11 +288,11 @@ variables:
     # - "v1.25.12"
     # - "v1.25.4"
     required: true
-    default: "v1.33.1"
+    # default: "v1.33.1"
     description: The Kubernetes version for the cluster.
-    # dependsOn:
-    #   compartmentId: cluster_compartment_id
-    #   clusterOptionId: "all"
+    dependsOn:
+      compartmentId: cluster_compartment_id
+      clusterOptionId: "all"
 
   pods_cidr:
     type: string
